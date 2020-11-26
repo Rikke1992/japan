@@ -293,10 +293,6 @@ header {
   bottom: 27px;
   left: 29px;
 }
-.wraper__galery .wraper__galery__image .wraper__galery__image__buttom {
-  display: flex;
-  flex-direction: row;
-}
 
 .wraper__galery__image__top {
   display: flex;
@@ -304,18 +300,153 @@ header {
   margin-bottom: 10px;
 }
 .wraper__galery__image__top__left {
-  max-width: 48%;
+  max-width: 50%;
   position: relative;
 }
 .wraper__galery__image__top__left img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 .wraper__galery__image__top__right {
   position: relative;
-  max-width: 48%;
+  max-width: 50%;
 }
 .wraper__galery__image__top__right img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+}
+
+.wraper__galery__image__buttom {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 33%;
+}
+.wraper__galery__image__buttom .wraper__galery__image__buttom_ {
+  max-width: 33%;
+}
+.wraper__galery__image__buttom .wraper__galery__image__buttom_ img {
+  width: 100%;
+  /* object-fit: scale-down; */
+  margin: 0px auto;
+}
+
+.wraper__linkGalery {
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+}
+.wraper__linkGalery .wraper__linkGalery__leftImage {
+  display: flex;
+  max-width: 1224px;
+  max-height: 354px;
+  margin-bottom: 77px;
+}
+.wraper__linkGalery .wraper__linkGalery__leftImage .wraper__linkGalery__Image {
+  width: 597px;
+}
+.wraper__linkGalery .wraper__linkGalery__leftImage .wraper__linkGalery__topText {
+  padding-left: 108px;
+}
+.wraper__linkGalery .wraper__linkGalery__leftImage .wraper__linkGalery__topText h2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  padding-top: 26px;
+  padding-bottom: 85px;
+  color: #102746;
+}
+.wraper__linkGalery .wraper__linkGalery__leftImage .wraper__linkGalery__topText p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  color: #102746;
+}
+.wraper__linkGalery .wraper__linkGalery__rightImage {
+  display: flex;
+  justify-content: flex-end;
+}
+.wraper__linkGalery .wraper__linkGalery__rightImage .wraper__linkGalery__bottomText {
+  margin-left: 44px;
+}
+.wraper__linkGalery .wraper__linkGalery__rightImage .wraper__linkGalery__bottomText h2 {
+  padding-top: 26px;
+  padding-bottom: 45px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #102746;
+  width: 357px;
+}
+.wraper__linkGalery .wraper__linkGalery__rightImage .wraper__linkGalery__bottomText p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  width: 519px;
+  color: #102746;
+  padding-right: 97px;
+}
+
+.wraper__infoGalery {
+  margin-top: 139px;
+}
+
+.wraper__infoGalery__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 33%;
+}
+.wraper__infoGalery__content .wraper__infoGalery__content__item {
+  margin-left: 57px;
+  margin-top: 58px;
+}
+.wraper__infoGalery__content .wraper__infoGalery__content__item p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102746;
+}
+.wraper__infoGalery__content .wraper__infoGalery__content__item .infoGalery__item__image {
+  max-width: 386px;
+  position: relative;
+}
+.wraper__infoGalery__content .wraper__infoGalery__content__item .infoGalery__item__image .infoGalery__item__image__bottomLine {
+  position: absolute;
+  display: flex;
+  bottom: 25px;
+  left: 15px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.wraper__infoGalery__content .wraper__infoGalery__content__item .infoGalery__item__image .infoGalery__item__image__bottomLine .likes {
+  display: flex;
+}
+.wraper__infoGalery__content .wraper__infoGalery__content__item .infoGalery__item__image .infoGalery__item__image__bottomLine .likes img {
+  width: 16px;
+  height: 15px;
+}
+.wraper__infoGalery__content .wraper__infoGalery__content__item .infoGalery__item__image .infoGalery__item__image__bottomLine .likes .comments {
+  display: flex;
+}
+.wraper__infoGalery__content .wraper__infoGalery__content__item .infoGalery__item__image .infoGalery__item__image__bottomLine .likes .comments img {
+  width: 14px;
+}
+.wraper__infoGalery__content .wraper__infoGalery__content__item .infoGalery__item__image img {
+  width: 100%;
 }
